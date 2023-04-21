@@ -11,21 +11,11 @@ def print_questions():
             
     elif subject_answer_input == "B":
         print ("ENGLISH LANGUAGE")
-        print ("Question 1\n")
-        with open ("C:\\Programming Projects\\Grader\\Eng Lang Questions\\eng_lang_qst1.txt", "r") as eng_question:
-            read_eng_question_1 = eng_question.read()
-            print (read_eng_question_1)
-            print ("A. 900\nB. 800\nC. 700\nD. 400")
-            answer_input = check_answer_input(answer_input)
+         question_files()
             
     elif subject_answer_input == "C":
         print ("CRRENT AFFAIRS")
-        print ("Question 1\n")
-        with open ("C:\\Programming Projects\\Grader\\Current Affairs Questions\\Curr_affrs_qst1.txt", "r") as curr_affrs_question:
-            read_curr_affrs_question_1 = curr_affrs_question.read()
-            print (read_curr_affrs_question_1)
-            print ("A. 900\nB. 800\nC. 700\nD. 400")
-            answer_input = check_answer_input(answer_input)
+        question_files()
     else:
         print ("Invalid input!\nPlease enter A, B, or C in capital letter.\n")
         print_questions()
